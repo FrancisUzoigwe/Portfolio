@@ -11,8 +11,21 @@
   font-family: main;
 }
 
+@font-face {
+  font-family: Zah;
+  src: url(/public/fonts/Zaptron-Regular.otf);
+}
+
+.Zah {
+  font-family: Zah;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
 :root {
-  font-family: main;
+  font-family: main, Zah;
   line-height: 1.5;
   font-weight: 400;
   margin: 0;

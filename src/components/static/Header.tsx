@@ -4,7 +4,7 @@ import francis1 from "../../assets/Logo2.svg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toggled } from "../../global/globalState";
+import { changedToggle, toggled } from "../../global/globalState";
 import DropDown from "./DropDown";
 
 const Header = () => {
@@ -25,8 +25,8 @@ const Header = () => {
       {toggle && <DropDown />}
       <div className="w-full h-[70px] flex items-center justify-center">
         <div className="w-full h-[70px] flex items-center justify-center fixed">
-          {scroll ? (
-            <div className="w-full bg-black transition  shadow-lg duration-300  text-white h-[70px] flex items-center justify-center">
+          {!scroll ? (
+            <div className="w-full  bg-black transition  duration-300  text-white h-[70px] flex items-center justify-center">
               <div className="w-[95%] flex items-center justify-between">
                 <Link to="/">
                   <div className="h-[35px] ">
@@ -58,17 +58,26 @@ const Header = () => {
                   </Link>
                 </div>
                 <div className="max-md:block hidden">
-                  <HiMenu
-                    className="text-3xl hover:cursor-pointer hover:scale-[1.2] transition-all duration-300"
-                    onClick={() => {
-                      dispatch(toggled());
-                    }}
-                  />
+                  {!toggle ? (
+                    <HiMenu
+                      className="text-3xl hover:cursor-pointer hover:scale-[1.2] transition-all duration-300"
+                      onClick={() => {
+                        dispatch(toggled());
+                      }}
+                    />
+                  ) : (
+                    <HiMenu
+                      className="text-3xl hover:cursor-pointer hover:scale-[1.2] transition-all duration-300"
+                      onClick={() => {
+                        dispatch(changedToggle());
+                      }}
+                    />
+                  )}
                 </div>
               </div>
             </div>
           ) : (
-            <div className="w-full h-[70px] flex items-center justify-center">
+            <div className="w-full bg-white text-black h-[70px] flex items-center justify-center shadow-md transition duration-300">
               <div className="w-[95%] flex items-center justify-between">
                 <Link to="/">
                   <div className="h-[35px] ">
@@ -100,12 +109,21 @@ const Header = () => {
                   </Link>
                 </div>
                 <div className="max-md:block hidden">
-                  <HiMenu
-                    className="text-3xl hover:cursor-pointer hover:scale-[1.2] transition-all duration-300"
-                    onClick={() => {
-                      dispatch(toggled());
-                    }}
-                  />
+                  {!toggle ? (
+                    <HiMenu
+                      className="text-3xl hover:cursor-pointer hover:scale-[1.2] transition-all duration-300"
+                      onClick={() => {
+                        dispatch(toggled());
+                      }}
+                    />
+                  ) : (
+                    <HiMenu
+                      className="text-3xl hover:cursor-pointer hover:scale-[1.2] transition-all duration-300"
+                      onClick={() => {
+                        dispatch(changedToggle());
+                      }}
+                    />
+                  )}
                 </div>
               </div>
             </div>

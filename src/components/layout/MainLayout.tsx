@@ -10,7 +10,6 @@ const MainLayout = () => {
         <Outlet />
         <Footer />
       </div>
-      ;
     </>
   );
 };

@@ -1,9 +1,18 @@
+import francis from "../assets/main.png";
+
 const MainPage = () => {
   return (
     <>
-      <div className="w-full h-[150vh] flex items-center justify-center">
-        <div>MainPage</div>
-      </div>
+      <div
+        className="relative -z-10 w-full min-h-[100vh] bg-[black] flex items-center justify-center "
+        style={{
+          background: `url(${francis})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center 14%",
+          backgroundSize: "cover",
+          backgroundColor: "black",
+        }}
+      ></div>
     </>
   );
 };

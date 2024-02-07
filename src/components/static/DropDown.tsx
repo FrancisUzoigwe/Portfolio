@@ -33,7 +33,9 @@ const DropDown = () => {
         <div className="w-[90%] flex ">
           <div className="absolute right-[14px] top-[20px]">
             <HiMenu
-              className="text-3xl hover:cursor-pointer hover:scale-[1.2] transition duration-300 text-white"
+              className={`text-3xl hover:cursor-pointer hover:scale-[1.2] transition duration-300 ${
+                main ? "text-black" : "text-white"
+              }`}
               onClick={() => {
                 dispatch(changedToggle());
               }}

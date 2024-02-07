@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   toggle: false,
+  mode: false,
 };
 
 const globalState = createSlice({
@@ -14,9 +15,15 @@ const globalState = createSlice({
     changedToggle: (state: any) => {
       state.toggle = false;
     },
+    light: (state: any) => {
+      state.mode = true;
+    },
+    dark: (state: any) => {
+      state.mode = false;
+    },
   },
 });
 
-export const { toggled, changedToggle } = globalState.actions;
+export const { toggled, changedToggle, light, dark } = globalState.actions;
 
 export default globalState.reducer;

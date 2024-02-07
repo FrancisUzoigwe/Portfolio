@@ -45,7 +45,7 @@ const DropDown = () => {
               onMode();
             }}
           >
-            {mode ? (
+            {main ? (
               <BsToggle2Off
                 className="text-2xl hover:cursor-pointer hover:scale-[1.2] duration-[450ms] transition-all"
                 onClick={() => {

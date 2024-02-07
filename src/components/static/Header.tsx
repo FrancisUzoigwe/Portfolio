@@ -14,12 +14,12 @@ const Header = () => {
   return (
     <>
       {toggle && <DropDown />}
-      <div className="w-full h-[70px] flex items-center justify-center">
-        <div className="w-full h-[70px] flex items-center justify-center fixed">
+      <div className="w-full h-[70px] relative flex items-center justify-center">
+        <div className="w-full h-[70px]  flex items-center justify-center fixed">
           <div
             className={`w-full  ${
               !main ? "bg-black text-white" : "bg-white text-black"
-            } transition  duration-300 h-[70px] flex items-center justify-center`}
+            }  h-[70px] flex items-center justify-center`}
           >
             <div className="w-[95%] flex items-center justify-between">
               <Link to="home" smooth={true} duration={1000}>

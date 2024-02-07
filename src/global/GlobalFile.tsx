@@ -7,7 +7,7 @@ import Skills from "../page/Skills";
 
 const GlobalFile = () => {
   return (
-    <div>
+    <div className="">
       <MainPage />
       <About />
       <Projects />

@@ -20,12 +20,20 @@
   font-family: Zah;
 }
 
+@font-face {
+  font-family: Buba;
+  src: url(/public/fonts/Budaya-YzoBj.otf);
+}
+
+.Buba {
+  font-family: Buba;
+}
 ::-webkit-scrollbar {
   width: 2px;
 }
 
 :root {
-  font-family: main, Zah;
+  font-family: main, Zah, Buba;
   line-height: 1.5;
   font-weight: 400;
   margin: 0;

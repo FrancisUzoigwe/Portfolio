@@ -1,8 +1,9 @@
-
 const Skills = () => {
   return (
-    <div>Skills</div>
-  )
-}
+    <div id="skills" className="bg-[purple] h-[100vh] w-full flex items-center justify-center  text-white">
+      Skills
+    </div>
+  );
+};
 
-export default Skills
+export default Skills;

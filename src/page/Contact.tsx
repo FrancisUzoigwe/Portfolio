@@ -1,8 +1,9 @@
-
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <div id="contact" className="h-[100vh] w-full flex items-center justify-center bg-black text-white">
+      Contact
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;

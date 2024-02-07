@@ -1,8 +1,9 @@
-
 const Resume = () => {
   return (
-    <div>Resume</div>
-  )
-}
+    <div id="resume" className="h-[100vh] w-full flex items-center justify-center bg-[blue] text-white">
+      Resume
+    </div>
+  );
+};
 
-export default Resume
+export default Resume;

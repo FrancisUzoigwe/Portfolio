@@ -16,12 +16,16 @@ const Header = () => {
       {toggle && <DropDown />}
       <div className="w-full h-[70px] flex items-center justify-center">
         <div className="w-full h-[70px] flex items-center justify-center fixed">
-          <div className={`w-full  ${!main? "bg-black text-white" : "bg-white text-black"} transition  duration-300 h-[70px] flex items-center justify-center`}>
+          <div
+            className={`w-full  ${
+              !main ? "bg-black text-white" : "bg-white text-black"
+            } transition  duration-300 h-[70px] flex items-center justify-center`}
+          >
             <div className="w-[95%] flex items-center justify-between">
               <Link to="home" smooth={true} duration={1000}>
                 <div className="h-[35px] max-md:h-[25px]  ">
                   <img
-                    src={!main? francis1 : francis}
+                    src={!main ? francis1 : francis}
                     alt="FrancisUzoigwe"
                     className="w-full h-full object-cover"
                   />
@@ -31,7 +35,7 @@ const Header = () => {
                 <Link to="home" smooth={true} duration={1000}>
                   <div className="mx-5 hover:cursor-pointer">Home</div>
                 </Link>
-                <Link to="about">
+                <Link to="about" smooth={true} duration={1000}>
                   <div className="mx-5 hover:cursor-pointer">About Me</div>
                 </Link>
                 <Link to="projects" smooth={true} duration={1000}>

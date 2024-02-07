@@ -14,7 +14,7 @@ const DropDown = () => {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren : 0.2,
+        staggerChildren: 0.2,
       },
     },
   };
@@ -83,7 +83,7 @@ const DropDown = () => {
                   Home
                 </motion.div>
               </Link>
-              <Link to="about">
+              <Link to="about" smooth={true} duration={1000}>
                 <motion.div
                   variants={item}
                   className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer ${

@@ -9,16 +9,19 @@ import { useState } from "react";
 
 const DropDown = () => {
   const dispatch = useDispatch();
-  const motionVariant = {
-    closed: {
-      opacity: 0,
-      y: "-80px",
-    },
-    open: {
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
       opacity: 1,
-      y: 0,
-      transition: { type: "spring", stiffness: 100 },
+      transition: {
+        staggerChildren : 0.2,
+      },
     },
+  };
+
+  const item = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
   };
 
   const [mode, setMode] = useState<boolean>(false);
@@ -64,65 +67,71 @@ const DropDown = () => {
             )}
           </div>
           <motion.div
-            className="flex w-full  justify-center h-full mt-14   max-md:block"
-            variants={motionVariant}
-            animate="open"
-            initial="closed"
+            className="flex w-full  justify-center h-full mt-14 flex-col items-center  max-md:block"
+            variants={container}
+            animate="show"
+            initial="hidden"
           >
             <div className="w-full ml-5 flex-col items-center flex">
               <Link to="home" smooth={true} duration={1000}>
-                <div
+                <motion.div
+                  variants={item}
                   className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer ${
                     main ? "text-black" : "text-white"
                   }`}
                 >
                   Home
-                </div>
+                </motion.div>
               </Link>
               <Link to="about">
-                <div
+                <motion.div
+                  variants={item}
                   className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer ${
                     main ? "text-black" : "text-white"
                   }`}
                 >
                   About Me
-                </div>
+                </motion.div>
               </Link>
               <Link to="projects" smooth={true} duration={1000}>
-                <div
+                <motion.div
+                  variants={item}
                   className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer ${
                     main ? "text-black" : "text-white"
                   }`}
                 >
                   Projects
-                </div>
+                </motion.div>
               </Link>
               <Link to="resume" smooth={true} duration={1000}>
-                <div
+                <motion.div
+                  variants={item}
                   className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer ${
                     main ? "text-black" : "text-white"
                   }`}
                 >
                   Resume
-                </div>
+                </motion.div>
               </Link>
               <Link to="skills" smooth={true} duration={1000}>
-                <div
+                <motion.div
+                  variants={item}
                   className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer ${
                     main ? "text-black" : "text-white"
                   }`}
                 >
                   Skills
-                </div>
+                </motion.div>
               </Link>
               <Link to="contact" smooth={true} duration={1000}>
-                <div
+                <motion.div
+                  variants={item}
                   className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer ${
                     main ? "text-black" : "text-white"
                   }`}
                 >
                   Contact
-                </div>
+                </motion.div>
               </Link>
             </div>
           </motion.div>

@@ -1,7 +1,6 @@
 import { HiMenu } from "react-icons/hi";
 import francis from "../../assets/Logo1.svg";
 import francis1 from "../../assets/Logo2.svg";
-import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toggled } from "../../global/globalState";
 import DropDown from "./DropDown";

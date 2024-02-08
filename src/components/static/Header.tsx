@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <>
       {toggle && <DropDown />}
-      <div className="w-full h-[70px] relative flex items-center justify-center">
+      <div className="w-full h-[70px] relative flex items-center justify-center z-[500]">
         <div className="w-full h-[70px]  flex items-center justify-center fixed">
           <div
             className={`w-full  ${

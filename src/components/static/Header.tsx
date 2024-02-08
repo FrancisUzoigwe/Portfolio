@@ -2,15 +2,21 @@ import { HiMenu } from "react-icons/hi";
 import francis from "../../assets/Logo1.svg";
 import francis1 from "../../assets/Logo2.svg";
 import { useDispatch, useSelector } from "react-redux";
-import { toggled } from "../../global/globalState";
+import { dark, light, toggled } from "../../global/globalState";
 import DropDown from "./DropDown";
 import { Link } from "react-scroll";
+import { BsToggle2Off, BsToggle2On } from "react-icons/bs";
+import { useState } from "react";
 
 const Header = () => {
   const dispatch = useDispatch();
   const toggle = useSelector((state: any) => state.toggle);
   const main = useSelector((state: any) => state.mode);
 
+  const [mode, setMode] = useState<boolean>(false);
+  const onMode = () => {
+    setMode(!mode);
+  };
   return (
     <>
       {toggle && <DropDown />}
@@ -33,32 +39,66 @@ const Header = () => {
               </Link>
               <div className="flex items-center max-md:hidden">
                 <Link to="home" smooth={true} duration={1000}>
-                  <div className="mx-5 hover:cursor-pointer">Home</div>
+                  <div className="mx-5 hover:cursor-pointer font-[Buba]">
+                    Home
+                  </div>
                 </Link>
                 <Link to="about" smooth={true} duration={1000}>
-                  <div className="mx-5 hover:cursor-pointer">About Me</div>
+                  <div className="mx-5 hover:cursor-pointer font-[Buba]">
+                    About Me
+                  </div>
                 </Link>
                 <Link to="projects" smooth={true} duration={1000}>
-                  <div className="mx-5 hover:cursor-pointer">Projects</div>
+                  <div className="mx-5 hover:cursor-pointer font-[Buba]">
+                    Projects
+                  </div>
                 </Link>
                 <Link to="resume" smooth={true} duration={1000}>
-                  <div className="mx-5 hover:cursor-pointer">Resume</div>
+                  <div className="mx-5 hover:cursor-pointer font-[Buba]">
+                    Resume
+                  </div>
                 </Link>
                 <Link to="skills" smooth={true} duration={1000}>
-                  <div className="mx-5 hover:cursor-pointer">Skills</div>
+                  <div className="mx-5 hover:cursor-pointer font-[Buba]">
+                    Skills
+                  </div>
                 </Link>
                 <Link to="contact" smooth={true} duration={1000}>
-                  <div className="mx-5 hover:cursor-pointer">Contact</div>
+                  <div className="mx-5 hover:cursor-pointer font-[Buba]">
+                    Contact
+                  </div>
                 </Link>
-              </div>
-              <div className="max-md:block hidden">
-                <HiMenu
-                  className="text-3xl hover:cursor-pointer hover:scale-[1.2] transition-all duration-300"
+                <div
+                  className="flex"
                   onClick={() => {
-                    dispatch(toggled());
+                    onMode();
                   }}
-                />
+                >
+                  {main ? (
+                    <BsToggle2Off
+                      className="text-2xl hover:cursor-pointer font-[Buba] hover:scale-[1.2] duration-[450ms] transition-all"
+                      onClick={() => {
+                        dispatch(dark());
+                      }}
+                    />
+                  ) : (
+                    <BsToggle2On
+                      className="text-2xl hover:cursor-pointer font-[Buba] hover:scale-[1.2] duration-[450ms] transition-all text-white"
+                      onClick={() => {
+                        dispatch(light());
+                      }}
+                    />
+                  )}
+                </div>
               </div>
+            </div>
+            <div className="max-md:block hidden">
+              <HiMenu
+                className="text-3xl hover:cursor-pointer font-[Buba] hover:scale-[1.2] transition-all duration-300"
+                onClick={() => {
+                  dispatch(toggled());
+                }}
+              />
             </div>
           </div>
         </div>

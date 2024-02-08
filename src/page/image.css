@@ -1,0 +1,10 @@
+.image {
+  @media screen and (max-width: 768px) {
+    background: url(./../assets/man.png);
+    background-position-y: 40%;
+    width: 100%;
+    height: 550px;
+    background-repeat: no-repeat;
+    margin-top: -50px;
+  }
+}

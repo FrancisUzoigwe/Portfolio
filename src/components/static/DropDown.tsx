@@ -36,7 +36,7 @@ const DropDown = () => {
         <div className="w-[90%] flex ">
           <div className="absolute right-[14px] top-[20px]">
             <HiMenu
-              className={`text-3xl hover:cursor-pointer hover:scale-[1.2] transition duration-300 ${
+              className={`text-3xl hover:cursor-pointer font-[Buba] hover:scale-[1.2] transition duration-300 ${
                 main ? "text-black" : "text-white"
               }`}
               onClick={() => {
@@ -52,14 +52,14 @@ const DropDown = () => {
           >
             {main ? (
               <BsToggle2Off
-                className="text-2xl hover:cursor-pointer hover:scale-[1.2] duration-[450ms] transition-all"
+                className="text-2xl hover:cursor-pointer font-[Buba] hover:scale-[1.2] duration-[450ms] transition-all"
                 onClick={() => {
                   dispatch(dark());
                 }}
               />
             ) : (
               <BsToggle2On
-                className="text-2xl hover:cursor-pointer hover:scale-[1.2] duration-[450ms] transition-all text-white"
+                className="text-2xl hover:cursor-pointer font-[Buba] hover:scale-[1.2] duration-[450ms] transition-all text-white"
                 onClick={() => {
                   dispatch(light());
                 }}
@@ -76,7 +76,7 @@ const DropDown = () => {
               <Link to="home" smooth={true} duration={1000}>
                 <motion.div
                   variants={item}
-                  className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer ${
+                  className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${
                     main ? "text-black" : "text-white"
                   }`}
                 >
@@ -86,7 +86,7 @@ const DropDown = () => {
               <Link to="about" smooth={true} duration={1000}>
                 <motion.div
                   variants={item}
-                  className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer ${
+                  className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${
                     main ? "text-black" : "text-white"
                   }`}
                 >
@@ -96,7 +96,7 @@ const DropDown = () => {
               <Link to="projects" smooth={true} duration={1000}>
                 <motion.div
                   variants={item}
-                  className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer ${
+                  className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${
                     main ? "text-black" : "text-white"
                   }`}
                 >
@@ -106,7 +106,7 @@ const DropDown = () => {
               <Link to="resume" smooth={true} duration={1000}>
                 <motion.div
                   variants={item}
-                  className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer ${
+                  className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${
                     main ? "text-black" : "text-white"
                   }`}
                 >
@@ -116,7 +116,7 @@ const DropDown = () => {
               <Link to="skills" smooth={true} duration={1000}>
                 <motion.div
                   variants={item}
-                  className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer ${
+                  className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${
                     main ? "text-black" : "text-white"
                   }`}
                 >
@@ -126,7 +126,7 @@ const DropDown = () => {
               <Link to="contact" smooth={true} duration={1000}>
                 <motion.div
                   variants={item}
-                  className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer ${
+                  className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${
                     main ? "text-black" : "text-white"
                   }`}
                 >

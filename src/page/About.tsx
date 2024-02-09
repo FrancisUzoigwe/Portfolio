@@ -25,7 +25,7 @@ const About = () => {
               Full Stack Developer
             </div>
             <div>
-              <Fade direction="right" duration={3000} triggerOnce={true}>
+              <Fade direction="right" duration={1000} triggerOnce={true}>
                 <div className="flex flex-col my-2">
                   <li className="text-[orange] text-[17px] font-[Buba]">
                     My Background
@@ -38,7 +38,7 @@ const About = () => {
                   </div>
                 </div>
               </Fade>
-              <Fade direction="right" duration={3000} triggerOnce={true}>
+              <Fade direction="right" duration={1000} triggerOnce={true}>
                 <div className="flex flex-col my-2">
                   <li className="text-[orange] text-[17px] font-[Buba]">
                     Frontend Expertise
@@ -51,7 +51,7 @@ const About = () => {
                   </div>
                 </div>
               </Fade>
-              <Fade direction="right" duration={3000} triggerOnce={true}>
+              <Fade direction="right" duration={1000} triggerOnce={true}>
                 <div className="flex flex-col my-2">
                   <li className="text-[orange] text-[17px] font-[Buba]">
                     Backend Proficiency
@@ -67,7 +67,7 @@ const About = () => {
                   </div>
                 </div>
               </Fade>
-              <Fade direction="right" duration={3000} triggerOnce={true}>
+              <Fade direction="right" duration={1000} triggerOnce={true}>
                 <div className="flex flex-col my-2">
                   <li className="text-[orange] text-[17px] font-[Buba]">
                     UI/UX Design
@@ -81,7 +81,7 @@ const About = () => {
                   </div>
                 </div>
               </Fade>
-              <Fade direction="right" duration={3000} triggerOnce={true}>
+              <Fade direction="right" duration={1000} triggerOnce={true}>
                 <div className="flex flex-col my-2">
                   <li className="text-[orange] text-[17px] font-[Buba]">
                     Collaborative Approach
@@ -94,7 +94,7 @@ const About = () => {
                   </div>
                 </div>
               </Fade>
-              <Fade direction="right" duration={3000} triggerOnce={true}>
+              <Fade direction="right" duration={1000} triggerOnce={true}>
                 <div className="flex flex-col my-2">
                   <li className="text-[orange] text-[17px] font-[Buba]">
                     My Mission
@@ -108,7 +108,7 @@ const About = () => {
                   </div>
                 </div>
               </Fade>
-              <Fade direction="right" duration={3000} triggerOnce={true}>
+              <Fade direction="right" duration={1000} triggerOnce={true}>
                 <div className="flex flex-col my-2">
                   <li className="text-[orange] text-[17px] font-[Buba]">
                     Let's Connect

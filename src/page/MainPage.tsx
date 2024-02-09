@@ -64,7 +64,7 @@ const MainPage = () => {
                   className="flex flex-col items-center "
                 >
                   <div
-                    className={`w-[25px] h-[25px] rounded-full ${
+                    className={`w-[22px] h-[22px] rounded-full ${
                       !mode ? "bg-white" : "bg-black"
                     }`}
                   ></div>
@@ -74,7 +74,7 @@ const MainPage = () => {
                     } h-[350px]  w-[3px]`}
                   ></div>
                 </motion.div>
-                <div className="text-white  w-[510px] max-md:w-auto absolute  left-10 max-md:top-4 top-4 max-md:text-left">
+                <div className="text-white  w-[510px] max-md:w-auto absolute  left-5 max-md:top-4 top-4 max-md:text-left">
                   <motion.div
                     variants={item}
                     className={`font-black   ${

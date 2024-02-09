@@ -32,14 +32,14 @@ const MainPage = () => {
     <>
       <div
         id="home"
-        className={` w-full max-md:min-h-[110vh] min-h-[100vh] overflow-hidden   flex  justify-center ${
+        className={` w-full  min-h-[100vh] overflow-hidden   flex  justify-center ${
           mode ? "text-black bg-white" : "text-white bg-black"
         } `}
       >
         <div
           className={`w-[95%] ${
             !mode ? "text-white" : "text-black"
-          } flex  justify-between  h-[400px] mt-20 "`}
+          } flex  justify-between  h-[300px] mt-20 "`}
         >
           <div className="image">
             <div className="max-md:mt-16 ">
@@ -102,13 +102,15 @@ const MainPage = () => {
                         />
                       </span>
                     </div>
-                    Driving digital transformation with mastery in both
-                    front-end and back-end development. Seamlessly bridging
-                    creativity and functionality to deliver captivating user
-                    experiences. A versatile full-stack{" "}
-                    <span className="text-[orange] underline">(M.E.R.N)</span>{" "}
-                    developer poised to elevate projects with comprehensive
-                    expertise and refined craftsmanship.
+                    <div className="text-[14px] mt-[2px]">
+                      Driving digital transformation with mastery in both
+                      front-end and back-end development. Seamlessly bridging
+                      creativity and functionality to deliver captivating user
+                      experiences. A versatile full-stack{" "}
+                      <span className="text-[orange] underline">(M.E.R.N)</span>{" "}
+                      developer poised to elevate projects with comprehensive
+                      expertise and refined craftsmanship.
+                    </div>
                   </motion.div>
 
                   <button className="hover:cursor-pointer px-5 py-[10px] my-5 transition duration-300 rounded-full bg-[orange] font-black hover:-translate-y-2">

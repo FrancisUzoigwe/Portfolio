@@ -4,8 +4,9 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedinIn,
-  FaTwitter,
 } from "react-icons/fa";
+
+import { FaWhatsapp, FaXTwitter } from "react-icons/fa6";
 import man from "../assets/man.png";
 import "./image.css";
 import { motion } from "framer-motion";
@@ -86,7 +87,7 @@ const MainPage = () => {
                       <span className="text-[orange]">
                         <TypeAnimation
                           sequence={[
-                            " full-Stack Developer",
+                            "Full-Stack Developer",
                             1000,
                             "Frontend Developer",
                             1000,
@@ -150,8 +151,8 @@ const MainPage = () => {
                             : "bg-black hover:bg-[#242424]"
                         } mx-[6px] flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
                       >
-                        <FaTwitter
-                          className={`${!mode ? "text-[blue]" : "text-white"}`}
+                        <FaXTwitter
+                          className={`${!mode ? "text-[black]" : "text-white"}`}
                           size={30}
                         />
                       </div>
@@ -183,6 +184,22 @@ const MainPage = () => {
                         <FaGithub
                           className={`${
                             !mode ? "text-[black] " : "text-white"
+                          }`}
+                          size={30}
+                        />
+                      </div>
+                    </a>
+                    <a href="https://wa.link/hu8yek">
+                      <div
+                        className={`w-[47px] h-[45px] rounded-xl ${
+                          !mode
+                            ? "bg-white hover:bg-[#777676]"
+                            : "bg-black hover:bg-[#242424] "
+                        } mx-[6px] flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
+                      >
+                        <FaWhatsapp
+                          className={`${
+                            !mode ? "text-[green] " : "text-white"
                           }`}
                           size={30}
                         />

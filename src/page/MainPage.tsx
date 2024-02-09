@@ -86,7 +86,7 @@ const MainPage = () => {
                       <span className="text-[orange]">
                         <TypeAnimation
                           sequence={[
-                            "A full-Stack Developer",
+                            " full-Stack Developer",
                             1000,
                             "Frontend Developer",
                             1000,

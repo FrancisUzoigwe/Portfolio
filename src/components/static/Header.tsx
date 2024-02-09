@@ -29,7 +29,7 @@ const Header = () => {
           >
             <div className="w-[95%] flex items-center justify-between">
               <Link to="home" smooth={true} duration={1000}>
-                <div className="h-[35px] max-md:h-[25px]  ">
+                <div className="h-[35px] max-md:h-[25px] ml-2  ">
                   <img
                     src={!main ? francis1 : francis}
                     alt="FrancisUzoigwe"
@@ -94,7 +94,7 @@ const Header = () => {
             </div>
             <div className="max-md:block hidden">
               <HiMenu
-                className="text-3xl hover:cursor-pointer font-[Buba] hover:scale-[1.2] transition-all duration-300"
+                className="text-3xl mr-[12px] hover:cursor-pointer font-[Buba] hover:scale-[1.2] transition-all duration-300"
                 onClick={() => {
                   dispatch(toggled());
                 }}

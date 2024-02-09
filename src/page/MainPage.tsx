@@ -72,7 +72,7 @@ const MainPage = () => {
                   <div
                     className={`${
                       !mode ? "bg-white" : "bg-black"
-                    } h-[350px]  w-[3px]`}
+                    } h-[310px]  w-[3px]`}
                   ></div>
                 </motion.div>
                 <div className="text-white  w-[510px] max-md:w-auto absolute  left-5 max-md:top-4 top-4 max-md:text-left">
@@ -117,91 +117,91 @@ const MainPage = () => {
                   <div className="flex mt-2">
                     <a href="https://facebook.com/FrancisUzoigwe.28/">
                       <div
-                        className={`w-[47px] h-[45px] rounded-xl ${
+                        className={`w-[42px] h-[40px] rounded-xl ${
                           !mode
                             ? "bg-white hover:bg-[#777676] transition duration-300"
                             : "bg-black hover:bg-[#242424]"
-                        } mx-[6px] flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
+                        } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
                       >
                         <FaFacebookF
                           className={`${!mode ? "text-[blue] " : "text-white"}`}
-                          size={30}
+                          size={27}
                         />
                       </div>
                     </a>
                     <a href="https://www.linkedin.com/in/francis-uzoigwe-2b3b9b246">
                       <div
-                        className={`w-[47px] h-[45px] rounded-xl ${
+                        className={`w-[42px] h-[40px] rounded-xl ${
                           !mode
                             ? "bg-white hover:bg-[#777676]"
                             : "bg-black hover:bg-[#242424]"
-                        } mx-[6px] flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
+                        } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
                       >
                         <FaLinkedinIn
                           className={`${!mode ? "text-[blue]" : "text-white"}`}
-                          size={30}
+                          size={27}
                         />
                       </div>
                     </a>
                     <a href="https://twitter.com/francisuzoigwe1">
                       <div
-                        className={`w-[47px] h-[45px] rounded-xl ${
+                        className={`w-[42px] h-[40px] rounded-xl ${
                           !mode
                             ? "bg-white hover:bg-[#777676]"
                             : "bg-black hover:bg-[#242424]"
-                        } mx-[6px] flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
+                        } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
                       >
                         <FaXTwitter
                           className={`${!mode ? "text-[black]" : "text-white"}`}
-                          size={30}
+                          size={27}
                         />
                       </div>
                     </a>
                     <a href="https://www.instagram.com/FrancisUzoigwe.28">
                       <div
-                        className={`w-[47px] h-[45px] rounded-xl ${
+                        className={`w-[42px] h-[40px] rounded-xl ${
                           !mode
                             ? "bg-white hover:bg-[#777676]"
                             : "bg-black hover:bg-[#242424]"
-                        } mx-[6px] flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
+                        } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
                       >
                         <FaInstagram
                           className={`${
                             !mode ? "text-[#b33c3c]" : "text-white"
                           }`}
-                          size={30}
+                          size={27}
                         />
                       </div>
                     </a>
                     <a href="https://github.com/FrancisUzoigwe">
                       <div
-                        className={`w-[47px] h-[45px] rounded-xl ${
+                        className={`w-[42px] h-[40px] rounded-xl ${
                           !mode
                             ? "bg-white hover:bg-[#777676]"
                             : "bg-black hover:bg-[#242424] "
-                        } mx-[6px] flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
+                        } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
                       >
                         <FaGithub
                           className={`${
                             !mode ? "text-[black] " : "text-white"
                           }`}
-                          size={30}
+                          size={27}
                         />
                       </div>
                     </a>
-                    <a href="https://wa.link/hu8yek">
+                    <a href="https://wa.link/r3i1hv">
                       <div
-                        className={`w-[47px] h-[45px] rounded-xl ${
+                        className={`w-[42px] h-[40px] rounded-xl ${
                           !mode
                             ? "bg-white hover:bg-[#777676]"
                             : "bg-black hover:bg-[#242424] "
-                        } mx-[6px] flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
+                        } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
                       >
                         <FaWhatsapp
                           className={`${
                             !mode ? "text-[green] " : "text-white"
                           }`}
-                          size={30}
+                          size={27}
                         />
                       </div>
                     </a>

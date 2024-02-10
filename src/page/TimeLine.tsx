@@ -37,6 +37,17 @@ const TimeLine: React.FC = () => {
       description2:
         "Worked on the server-side to ensure, users are been responded to quickly on a single click of a button",
     },
+    {
+      year: 2023,
+      title: "Full-Stack Developer",
+      workPlace: "SwiftCart.NG",
+      description:
+        "Worked on creating interactive user interface, thereby increasing the traffic by 20%.",
+      description1:
+        "Worked on ensuring that functionalities and sweet animations for positive user experience ",
+      description2:
+        "Worked on the server-side to ensure, users are been responded to quickly on a single click of a button",
+    },
   ];
 
   return (

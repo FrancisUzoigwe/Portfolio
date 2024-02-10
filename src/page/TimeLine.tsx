@@ -43,7 +43,7 @@ const TimeLine: React.FC = () => {
     <div className="container mx-auto px-4 w-full">
         
       <div className="relative w-full md:w-full lg:w-full xl:w-full 2xl:w-3/4 md:mx-auto md:text-center">
-        <div className="relative md:mx-auto  md:text-center">
+        <div className="md:mx-auto  md:text-center">
           <Fade triggerOnce={true} delay={1000}>
             {experiences.map((experience, index) => (
               <div

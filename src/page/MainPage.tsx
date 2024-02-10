@@ -54,7 +54,7 @@ const MainPage = () => {
               </motion.div>
               <div className="flex relative w-[98%]">
                 <motion.div
-                  initial={{ x: "-100", opacity: 0 }}
+                  initial={{ x: "-150", opacity: 0 }}
                   animate={{
                     x: 0,
                     opacity: 1,

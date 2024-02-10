@@ -11,7 +11,7 @@ const About = () => {
       } text-white`}
     >
       <div
-        className={`flex flex-col my-1 items-center ${
+        className={`flex flex-col my-[6px] items-center ${
           !mode ? "text-white" : "text-black font-black"
         } mt-[63px] w-[95%] pb-2`}
       >

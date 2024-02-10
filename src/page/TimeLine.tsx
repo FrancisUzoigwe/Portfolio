@@ -52,20 +52,20 @@ const TimeLine: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4 w-full">
-      <div className="relative w-full md:w-full lg:w-full xl:w-full 2xl:w-3/4 md:mx-auto md:text-center">
+      <div className=" w-full md:w-full lg:w-full xl:w-full 2xl:w-3/4 md:mx-auto md:text-center">
         <div className="md:mx-auto  md:text-center">
           {experiences.map((experience, index) => (
             <Fade triggerOnce={true} delay={1000}>
               <div
                 key={index}
-                className={`mb-8 relative  py-3 flex md:flex-row flex-col ${
+                className={`mb-8 relative  py-3 flex flex-col ${
                   index % 2 === 0 ? "md:items-start" : "md:items-end"
                 }`}
                 style={{ marginTop: index === 0 ? 0 : "-1rem" }}
               >
                 <div
                   className={` w-full md:w-1/2 md:order-${
-                    index % 2 === 0 ? "2" : "1"
+                    index % 2 === 0 ? "1" : "2"
                   } ${index % 2 === 0 ? "md:pl-3" : "md:pr-3"}`}
                 >
                   <div className="w-50px h-50px ">
@@ -78,7 +78,7 @@ const TimeLine: React.FC = () => {
                 </div>
                 <div
                   className={`w-full md:w-1/2 md:order-${
-                    index % 2 === 0 ? "1" : "2"
+                    index % 2 === 0 ? "2" : "1"
                   } ${index % 2 === 0 ? "md:pr-3" : "md:pl-3"}`}
                 >
                   <div

@@ -52,7 +52,6 @@ const TimeLine: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4 w-full">
-        
       <div className="relative w-full md:w-full lg:w-full xl:w-full 2xl:w-3/4 md:mx-auto md:text-center">
         <div className="md:mx-auto  md:text-center">
           <Fade triggerOnce={true} delay={1000}>
@@ -66,7 +65,7 @@ const TimeLine: React.FC = () => {
               >
                 <div
                   className={` w-full md:w-1/2 md:order-${
-                    index % 2 === 0 ? "1" : "2"
+                    index % 2 === 0 ? "2" : "1"
                   } ${index % 2 === 0 ? "md:pl-4" : "md:pr-4"}`}
                 >
                   <div className="w-50px h-50px mr-4 ">
@@ -79,7 +78,7 @@ const TimeLine: React.FC = () => {
                 </div>
                 <div
                   className={`w-full md:w-1/2 md:order-${
-                    index % 2 === 0 ? "2" : "1"
+                    index % 2 === 0 ? "1" : "2"
                   } ${index % 2 === 0 ? "md:pr-4" : "md:pl-4"}`}
                 >
                   <div

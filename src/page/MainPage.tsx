@@ -11,6 +11,7 @@ import man from "../assets/man.png";
 import "./image.css";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+import { Link } from "react-scroll";
 const MainPage = () => {
   const mode = useSelector((state: any) => state.mode);
 
@@ -113,9 +114,11 @@ const MainPage = () => {
                     </div>
                   </motion.div>
 
-                  <button className="hover:cursor-pointer px-5 py-[10px] my-5 transition duration-300 rounded-full bg-[orange] font-black hover:-translate-y-2">
-                    Download CV
-                  </button>
+                  <Link to="resume" duration={1000} smooth={true}>
+                    <button className="hover:cursor-pointer px-5 py-[10px] my-5 transition duration-300 rounded-full bg-[orange] font-black hover:-translate-y-2">
+                      View Resume
+                    </button>
+                  </Link>
                   <div className="flex mt-2">
                     <a href="https://facebook.com/FrancisUzoigwe.28/">
                       <div

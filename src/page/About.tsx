@@ -31,10 +31,9 @@ const About = () => {
                     My Background
                   </li>
                   <div className="text-[13px]">
-                    I embarked on my programming journey [briefly mention your
-                    background or education]. Over time, I've mastered a range
-                    of technologies and frameworks, enabling me to excel in both
-                    frontend and backend development.
+                    I embarked on my programming journey in 2019 Over time, I've
+                    mastered a range of technologies and frameworks, enabling me
+                    to excel in both frontend and backend development.
                   </div>
                 </div>
               </Fade>
@@ -46,8 +45,10 @@ const About = () => {
                   <div className="text-[13px]">
                     I specialize in creating captivating and user-friendly
                     interfaces. Utilizing HTML, CSS, JavaScript, and modern
-                    frameworks like React and Angular, I bring designs to life
-                    with responsive layouts and interactive elements.
+                    frameworks like React, Vite, Tailwind, and also state
+                    management. I bring designs to life with responsive layouts
+                    and interactive elements for optimum user experience
+                    performance.
                   </div>
                 </div>
               </Fade>
@@ -59,11 +60,10 @@ const About = () => {
                   <div className="text-[13px]">
                     I specialize in developing robust backend architectures for
                     dynamic web applications. Leveraging technologies like
-                    Node.js, Python, and Java, I ensure efficient and secure
-                    systems from database design to server-side scripting. My
-                    expertise includes RESTful APIs, authentication, and
-                    database management, ensuring seamless application
-                    functionality.
+                    Node.js, Express. I ensure efficient and secure systems from
+                    database design to server-side scripting. My expertise
+                    includes RESTful APIs, authentication, and database
+                    management, ensuring seamless application functionality.
                   </div>
                 </div>
               </Fade>
@@ -89,8 +89,8 @@ const About = () => {
                   <div className="text-[13px]">
                     I excel in collaborative settings, working with designers,
                     engineers, and stakeholders to achieve shared goals. I
-                    prioritize open communication and teamwork to drive success
-                    in cross-functional teams.
+                    prioritize open communication and teamwork (GITHUB) to drive
+                    success in cross-functional teams.
                   </div>
                 </div>
               </Fade>

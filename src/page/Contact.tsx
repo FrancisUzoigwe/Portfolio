@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className={`min-h-[90vh] w-full flex justify-center ${
+      className={`h-[80vh] w-full flex justify-center ${
         !mode ? "bg-black text-white" : "bg-white text-black"
       }`}
     >

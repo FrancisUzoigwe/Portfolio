@@ -5,7 +5,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
-
+import Lazy from "react-lazy-load";
 import { FaWhatsapp, FaXTwitter } from "react-icons/fa6";
 import man from "../assets/man.png";
 import "./image.css";
@@ -73,14 +73,14 @@ const MainPage = () => {
                   <div
                     className={`${
                       !mode ? "bg-white" : "bg-black"
-                    } h-[310px]  w-[3px]`}
+                    } h-[300px]  w-[3px]`}
                   ></div>
                 </motion.div>
                 <div className="text-white  w-[510px] max-md:w-auto absolute  left-5 max-md:top-4 top-4 max-md:text-left">
                   <motion.div
                     variants={item}
-                    className={`font-black   ${
-                      mode ? "text-black " : "text-white"
+                    className={`  ${
+                      mode ? "text-black font-black  " : "text-white"
                     }`}
                   >
                     <div className="font-[Buba] max-md:text-[22px] text-4xl max-md:w-auto w-[520px] ">
@@ -122,91 +122,91 @@ const MainPage = () => {
                   <div className="flex mt-2">
                     <a href="https://facebook.com/FrancisUzoigwe.28/">
                       <div
-                        className={`w-[42px] h-[40px] rounded-xl ${
+                        className={`w-[37px] h-[37px] rounded-xl ${
                           !mode
                             ? "bg-white hover:bg-[#777676] transition duration-300"
                             : "bg-black hover:bg-[#242424]"
-                        } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
+                        } mx-[5px] flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
                       >
                         <FaFacebookF
                           className={`${!mode ? "text-[blue] " : "text-white"}`}
-                          size={27}
+                          size={25}
                         />
                       </div>
                     </a>
                     <a href="https://www.linkedin.com/in/francis-uzoigwe-2b3b9b246">
                       <div
-                        className={`w-[42px] h-[40px] rounded-xl ${
+                        className={`w-[37px] h-[37px] rounded-xl ${
                           !mode
                             ? "bg-white hover:bg-[#777676]"
                             : "bg-black hover:bg-[#242424]"
-                        } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
+                        } mx-[5px] flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
                       >
                         <FaLinkedinIn
                           className={`${!mode ? "text-[blue]" : "text-white"}`}
-                          size={27}
+                          size={25}
                         />
                       </div>
                     </a>
                     <a href="https://twitter.com/francisuzoigwe1">
                       <div
-                        className={`w-[42px] h-[40px] rounded-xl ${
+                        className={`w-[37px] h-[37px] rounded-xl ${
                           !mode
                             ? "bg-white hover:bg-[#777676]"
                             : "bg-black hover:bg-[#242424]"
-                        } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
+                        } mx-[5px] flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
                       >
                         <FaXTwitter
                           className={`${!mode ? "text-[black]" : "text-white"}`}
-                          size={27}
+                          size={25}
                         />
                       </div>
                     </a>
                     <a href="https://www.instagram.com/FrancisUzoigwe.28">
                       <div
-                        className={`w-[42px] h-[40px] rounded-xl ${
+                        className={`w-[37px] h-[37px] rounded-xl ${
                           !mode
                             ? "bg-white hover:bg-[#777676]"
                             : "bg-black hover:bg-[#242424]"
-                        } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
+                        } mx-[5px] flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
                       >
                         <FaInstagram
                           className={`${
                             !mode ? "text-[#b33c3c]" : "text-white"
                           }`}
-                          size={27}
+                          size={25}
                         />
                       </div>
                     </a>
                     <a href="https://github.com/FrancisUzoigwe">
                       <div
-                        className={`w-[42px] h-[40px] rounded-xl ${
+                        className={`w-[37px] h-[37px] rounded-xl ${
                           !mode
                             ? "bg-white hover:bg-[#777676]"
                             : "bg-black hover:bg-[#242424] "
-                        } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
+                        } mx-[5px] flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
                       >
                         <FaGithub
                           className={`${
                             !mode ? "text-[black] " : "text-white"
                           }`}
-                          size={27}
+                          size={25}
                         />
                       </div>
                     </a>
                     <a href="https://wa.link/r3i1hv">
                       <div
-                        className={`w-[42px] h-[40px] rounded-xl ${
+                        className={`w-[37px] h-[37px] rounded-xl ${
                           !mode
                             ? "bg-white hover:bg-[#777676]"
                             : "bg-black hover:bg-[#242424] "
-                        } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
+                        } mx-[5px] flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
                       >
                         <FaWhatsapp
                           className={`${
                             !mode ? "text-[green] " : "text-white"
                           }`}
-                          size={27}
+                          size={25}
                         />
                       </div>
                     </a>
@@ -215,10 +215,15 @@ const MainPage = () => {
               </div>
             </div>
           </div>
-          <div
-            className="w-[500px] max-lg:hidden -mt-20 h-[500px]"
-            style={{ background: `url(${man})`, backgroundRepeat: "no-repeat" }}
-          ></div>
+          <Lazy height={500}>
+            <div
+              className="w-[500px] max-lg:hidden -mt-20 h-[500px]"
+              style={{
+                background: `url(${man})`,
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+          </Lazy>
         </div>
       </div>
     </>

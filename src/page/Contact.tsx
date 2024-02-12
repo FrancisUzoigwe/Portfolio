@@ -3,7 +3,6 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedinIn,
-  FaTiktok,
   FaWhatsapp,
   FaXTwitter,
   FaYoutube,
@@ -125,7 +124,7 @@ const Contact = () => {
                   />
                 </div>
               </a>
-              <a href="https://www.tiktok.com/@francisuzoigwe28">
+              {/* <a href="https://www.tiktok.com/@francisuzoigwe28">
                 <div
                   className={`w-[42px] h-[40px] rounded-xl ${
                     !mode
@@ -138,7 +137,7 @@ const Contact = () => {
                     size={27}
                   />
                 </div>
-              </a>
+              </a> */}
               <a href="https://www.linkedin.com/in/francis-uzoigwe-2b3b9b246">
                 <div
                   className={`w-[42px] h-[40px] rounded-xl ${

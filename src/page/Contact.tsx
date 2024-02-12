@@ -111,7 +111,7 @@ const Contact = () => {
                   />
                 </div>
               </a>
-              <a href="https://www.linkedin.com/in/francis-uzoigwe-2b3b9b246">
+              <a href="https://www.youtube.com/channel/UC6rvLb8SLFHsKb3EkeI2yTg">
                 <div
                   className={`w-[42px] h-[40px] rounded-xl ${
                     !mode
@@ -125,7 +125,7 @@ const Contact = () => {
                   />
                 </div>
               </a>
-              <a href="https://www.linkedin.com/in/francis-uzoigwe-2b3b9b246">
+              <a href="https://www.tiktok.com/@francisuzoigwe28">
                 <div
                   className={`w-[42px] h-[40px] rounded-xl ${
                     !mode

@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import other from "../assets/main.png";
 import { Fade } from "react-awesome-reveal";
+import LazyLoad from "react-lazy-load";
 const About = () => {
   const mode = useSelector((state: any) => state.mode);
   return (
@@ -17,9 +18,11 @@ const About = () => {
       >
         <div className="font-[Buba] text-4xl max-md:text-2xl">About Me</div>
         <div className="flex h-full w-full justify-between items-center max-md:flex-col">
-          <div className="w-[400px] max-md:w-[70%] max-md:mb-2 h-[95%] ">
-            <img src={other} className="w-full h-full object-contain" />
-          </div>
+          <LazyLoad height={700}>
+            <div className="w-[400px ] max-md:w-[70%] max-md:mb-2 h-[95%] ">
+              <img src={other} className="w-full h-full object-contain" />
+            </div>
+          </LazyLoad>
           <div className="w-[66%] max-md:w-full max-md:ml-0 ml-5 h-[95%] ">
             <div className="text-[orange] font-[Buba] text-2xl">
               Full Stack Developer

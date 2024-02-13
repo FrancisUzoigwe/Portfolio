@@ -93,7 +93,7 @@ const MainPage = () => {
                             1000,
                             "Project Manager",
                             1000,
-                            "CyberSecurity expert",
+                            "CyberSecurity Expert",
                             1000,
                           ]}
                           speed={10}

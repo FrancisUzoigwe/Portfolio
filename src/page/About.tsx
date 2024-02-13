@@ -20,7 +20,7 @@ const About = () => {
                 <div className={`min-w-[200px] h-[150px] bg-white rounded-lg mr-5 border-[2px] ${!mode ? "border-none" : "border-[gray]"}`}>
                   <img src={frontend} alt="FrontEnd" className="h-full w-full  rounded-lg  object-cover" />
                 </div>
-                <div className="max-md:text-center mt-3 text-[15px]">I excel in crafting captivating and intuitive interfaces, employing a blend of HTML, CSS, and JavaScript alongside cutting-edge frameworks such as React, Vite, and Tailwind. By integrating seamless state management, I breathe life into designs, ensuring responsive layouts and dynamic interactions that elevate user experience to its zenith.</div>
+                <div className="max-md:text-center mt-3 text-[15px]">Proficient in crafting compelling interfaces with HTML, CSS, and JavaScript, enhanced by React, Vite, and Tailwind. Specialize in seamless state management for responsive layouts and dynamic interactions, enhancing user experience.</div>
               </div>
             </div>
           </div>
@@ -34,7 +34,8 @@ const About = () => {
                 <div className={`min-w-[200px] h-[150px] bg-white rounded-lg mr-5 border-[2px] ${!mode ? "border-none" : "border-[gray]"}`}>
                   <img src={frontend} alt="FrontEnd" className="h-full w-full  rounded-lg  object-cover" />
                 </div>
-                <div className="max-md:text-center mt-3 text-[15px]">I'm dedicated to crafting resilient backend architectures for dynamic web applications, harnessing the power of technologies like Node.js and Express. From meticulous database design to flawless server-side scripting, I guarantee efficient and secure systems. My proficiency extends to building RESTful APIs, implementing authentication mechanisms, and managing databases, all to ensure seamless application functionality and user satisfaction.</div>
+                <div className="max-md:text-center mt-3 text-[15px]">
+                  Proficient in Node.js and Express for robust backend architectures. Experienced in database design, scripting, RESTful APIs, authentication, and management for seamless functionality..</div>
               </div>
             </div>
           </div>
@@ -48,7 +49,7 @@ const About = () => {
                 <div className={`min-w-[200px] h-[150px] bg-white rounded-lg mr-5 border-[2px] ${!mode ? "border-none" : "border-[gray]"}`}>
                   <img src={frontend} alt="FrontEnd" className="h-full w-full  rounded-lg  object-cover" />
                 </div>
-                <div className="max-md:text-center mt-3 text-[15px]">Beyond technical prowess, I'm driven by a passion for crafting intuitive user experiences that resonate with users on a profound level. I firmly believe that effective UI/UX design is the cornerstone of user satisfaction. By meticulously conducting user research, prototyping, and rigorous testing, I bring to life visually captivating and seamlessly navigable interfaces tailored to meet the diverse needs of users.</div>
+                <div className="max-md:text-center mt-3 text-[15px]">Passionate about intuitive user experiences and effective UI/UX design. Skilled in user research, prototyping, and rigorous testing to create captivating interfaces tailored to diverse user needs.</div>
               </div>
             </div>
           </div>
@@ -62,7 +63,7 @@ const About = () => {
                 <div className={`min-w-[200px] h-[150px] bg-white rounded-lg mr-5 border-[2px] ${!mode ? "border-none" : "border-[gray]"}`}>
                   <img src={frontend} alt="FrontEnd" className="h-full w-full  rounded-lg  object-cover" />
                 </div>
-                <div className="max-md:text-center mt-3 text-[15px]">I thrive in collaborative environments, seamlessly integrating with designers, engineers, and stakeholders to realize shared objectives. With a commitment to open communication and teamwork, I leverage platforms like GitHub to foster cohesion and drive success within cross-functional teams.</div>
+                <div className="max-md:text-center mt-3 text-[15px]">Experienced in collaborative environments, working with diverse teams to achieve shared goals. Utilize GitHub for seamless communication and teamwork to drive success..</div>
               </div>
             </div>
           </div>
@@ -76,11 +77,8 @@ const About = () => {
                 <div className={`min-w-[200px] h-[150px] bg-white rounded-lg mr-5 border-[2px] ${!mode ? "border-none" : "border-[gray]"}`}>
                   <img src={frontend} alt="FrontEnd" className="h-full w-full  rounded-lg  object-cover" />
                 </div>
-                <div className="max-md:text-center mt-3 text-[15px]"> I aim to use technology to solve real-world problems and
-                  improve digital interactions. Whether building innovative
-                  products, optimizing systems, or pushing creative
-                  boundaries, I'm dedicated to delivering high-quality
-                  solutions that have a positive impact.</div>
+                <div className="max-md:text-center mt-3 text-[15px]">
+                  Committed to using technology to solve real-world problems and enhance digital experiences. Striving to deliver impactful solutions through innovation.</div>
               </div>
             </div>
           </div>
@@ -93,7 +91,7 @@ const About = () => {
                 <div className={`min-w-[200px] h-[150px] bg-white rounded-lg mr-5 border-[2px] ${!mode ? "border-none" : "border-[gray]"}`}>
                   <img src={frontend} alt="FrontEnd" className="h-full w-full  rounded-lg  object-cover" />
                 </div>
-                <div className="max-md:text-center mt-3 text-[15px]">I'm excited to engage with fellow developers, designers, and tech aficionados. Whether it's collaborating on projects, delving into industry trends, or exchanging innovative ideas, don't hesitate to reach out. Let's embark on a journey of innovation together!</div>
+                <div className="max-md:text-center mt-3 text-[15px]">Excited to connect with developers, designers, and tech enthusiasts. Let's collaborate, discuss trends, and share ideas. Reach out and let's innovate together!</div>
               </div>
             </div>
           </div>

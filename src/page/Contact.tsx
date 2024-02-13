@@ -14,9 +14,8 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className={`h-[80vh] w-full flex justify-center ${
-        !mode ? "bg-black text-white" : "bg-white text-black"
-      }`}
+      className={`h-[80vh] w-full flex justify-center ${!mode ? "bg-black text-white" : "bg-white text-black"
+        }`}
     >
       <div className="w-full h-auto flex flex-col items-center mt-[65px]">
         <div className="text-4xl max-md:text-2xl font-[Buba]">Contact</div>
@@ -37,9 +36,8 @@ const Contact = () => {
                   />
 
                   <span
-                    className={`pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 ${
-                      !mode ? "bg-black text-white" : "bg-white text-black"
-                    } p-0.5 text-xs transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs`}
+                    className={`pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 ${!mode ? "bg-black text-white" : "bg-white text-black"
+                      } p-0.5 text-xs transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs`}
                   >
                     Name
                   </span>
@@ -58,9 +56,8 @@ const Contact = () => {
                   />
 
                   <span
-                    className={`pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 ${
-                      !mode ? "bg-black text-white" : "bg-white text-black"
-                    } p-0.5 text-xs transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs`}
+                    className={`pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 ${!mode ? "bg-black text-white" : "bg-white text-black"
+                      } p-0.5 text-xs transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs`}
                   >
                     EmailAddress
                   </span>
@@ -79,9 +76,8 @@ const Contact = () => {
                 />
 
                 <span
-                  className={`pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 ${
-                    !mode ? "bg-black text-white" : "bg-white text-black"
-                  } p-0.5 text-xs transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs`}
+                  className={`pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 ${!mode ? "bg-black text-white" : "bg-white text-black"
+                    } p-0.5 text-xs transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs`}
                 >
                   Write Message Here
                 </span>
@@ -94,15 +90,15 @@ const Contact = () => {
             </div>
           </div>
           {/* <div className="w-full justify-center text-white flex">OR</div> */}
-          <div className="text-white w-full mt-5 justify-end flex">
-            <div className="flex mt-2">
+          <div className="text-white w-full  mt-7 flex-col items-end flex">
+            <div>Reach me on</div>
+            <div className="flex ">
               <a href="https://facebook.com/FrancisUzoigwe.28/">
                 <div
-                  className={`w-[37px] h-[37px] rounded-xl ${
-                    !mode
-                      ? "bg-white hover:bg-[#777676] transition duration-300"
-                      : "bg-black hover:bg-[#242424]"
-                  } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
+                  className={`w-[37px] h-[37px] rounded-xl ${!mode
+                    ? "bg-white hover:bg-[#777676] transition duration-300"
+                    : "bg-black hover:bg-[#242424]"
+                    } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
                 >
                   <FaFacebookF
                     className={`${!mode ? "text-[blue] " : "text-white"}`}
@@ -112,11 +108,10 @@ const Contact = () => {
               </a>
               <a href="https://www.youtube.com/channel/UC6rvLb8SLFHsKb3EkeI2yTg">
                 <div
-                  className={`w-[37px] h-[37px] rounded-xl ${
-                    !mode
-                      ? "bg-white hover:bg-[#777676]"
-                      : "bg-black hover:bg-[#242424]"
-                  } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
+                  className={`w-[37px] h-[37px] rounded-xl ${!mode
+                    ? "bg-white hover:bg-[#777676]"
+                    : "bg-black hover:bg-[#242424]"
+                    } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
                 >
                   <FaYoutube
                     className={`${!mode ? "text-[red]" : "text-white"}`}
@@ -140,11 +135,10 @@ const Contact = () => {
               </a> */}
               <a href="https://www.linkedin.com/in/francis-uzoigwe-2b3b9b246">
                 <div
-                  className={`w-[37px] h-[37px] rounded-xl ${
-                    !mode
-                      ? "bg-white hover:bg-[#777676]"
-                      : "bg-black hover:bg-[#242424]"
-                  } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
+                  className={`w-[37px] h-[37px] rounded-xl ${!mode
+                    ? "bg-white hover:bg-[#777676]"
+                    : "bg-black hover:bg-[#242424]"
+                    } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
                 >
                   <FaLinkedinIn
                     className={`${!mode ? "text-[blue]" : "text-white"}`}
@@ -154,11 +148,10 @@ const Contact = () => {
               </a>
               <a href="https://twitter.com/francisuzoigwe1">
                 <div
-                  className={`w-[37px] h-[37px] rounded-xl ${
-                    !mode
-                      ? "bg-white hover:bg-[#777676]"
-                      : "bg-black hover:bg-[#242424]"
-                  } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
+                  className={`w-[37px] h-[37px] rounded-xl ${!mode
+                    ? "bg-white hover:bg-[#777676]"
+                    : "bg-black hover:bg-[#242424]"
+                    } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
                 >
                   <FaXTwitter
                     className={`${!mode ? "text-[black]" : "text-white"}`}
@@ -168,11 +161,10 @@ const Contact = () => {
               </a>
               <a href="https://www.instagram.com/FrancisUzoigwe.28">
                 <div
-                  className={`w-[37px] h-[37px] rounded-xl ${
-                    !mode
-                      ? "bg-white hover:bg-[#777676]"
-                      : "bg-black hover:bg-[#242424]"
-                  } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
+                  className={`w-[37px] h-[37px] rounded-xl ${!mode
+                    ? "bg-white hover:bg-[#777676]"
+                    : "bg-black hover:bg-[#242424]"
+                    } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
                 >
                   <FaInstagram
                     className={`${!mode ? "text-[#b33c3c]" : "text-white"}`}
@@ -182,11 +174,10 @@ const Contact = () => {
               </a>
               <a href="https://github.com/FrancisUzoigwe">
                 <div
-                  className={`w-[37px] h-[37px] rounded-xl ${
-                    !mode
-                      ? "bg-white hover:bg-[#777676]"
-                      : "bg-black hover:bg-[#242424] "
-                  } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
+                  className={`w-[37px] h-[37px] rounded-xl ${!mode
+                    ? "bg-white hover:bg-[#777676]"
+                    : "bg-black hover:bg-[#242424] "
+                    } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
                 >
                   <FaGithub
                     className={`${!mode ? "text-[black] " : "text-white"}`}
@@ -196,11 +187,10 @@ const Contact = () => {
               </a>
               <a href="https://wa.link/r3i1hv">
                 <div
-                  className={`w-[37px] h-[37px] rounded-xl ${
-                    !mode
-                      ? "bg-white hover:bg-[#777676]"
-                      : "bg-black hover:bg-[#242424] "
-                  } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
+                  className={`w-[37px] h-[37px] rounded-xl ${!mode
+                    ? "bg-white hover:bg-[#777676]"
+                    : "bg-black hover:bg-[#242424] "
+                    } mx-1 flex items-center justify-center hover:cursor-pointer hover:-translate-y-2 transition duration-300`}
                 >
                   <FaWhatsapp
                     className={`${!mode ? "text-[green] " : "text-white"}`}
@@ -208,6 +198,11 @@ const Contact = () => {
                   />
                 </div>
               </a>
+            </div>
+            <div className={`w-full flex items-center justify-center h-[10px] my-4 ${!mode ? "bg-black text-white" : "bg-white text-black"}`}>
+              <div className={`font-[Buba] text-[14px] mt-4 w-full flex justify-center items-center ${!mode ? "bg-black text-white" : "bg-white text-black"}`}>
+                © <a href="https://github.com/Francisuzoigwe">FrancisUzoigwe 2024</a>
+              </div>
             </div>
           </div>
         </div>

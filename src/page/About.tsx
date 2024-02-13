@@ -1,133 +1,105 @@
 import { useSelector } from "react-redux";
-import other from "../assets/main.png";
+import frontend from "./../assets/front.jpg"
 import { Fade } from "react-awesome-reveal";
-import LazyLoad from "react-lazy-load";
 const About = () => {
   const mode = useSelector((state: any) => state.mode);
   return (
     <div
       id="about"
-      className={`min-h-[100vh] w-full flex justify-center ${
-        !mode ? "bg-black" : "bg-white"
-      } text-white`}
+      className={`min-h-[100vh] w-full flex justify-center ${!mode ? "bg-black" : "bg-white"
+        } text-white`}
     >
-      <div
-        className={`flex flex-col my-[6px] items-center ${
-          !mode ? "text-white" : "text-black font-black"
-        } mt-[63px] w-[95%] pb-2`}
-      >
-        <div className="font-[Buba] text-4xl max-md:text-2xl">About Me</div>
-        <div className="flex h-full w-full justify-between items-center max-md:flex-col">
-          <LazyLoad height={700}>
-            <div className="w-[400px ] max-md:w-[70%] max-md:mb-2 h-[95%] ">
-              <img src={other} className="w-full h-full object-contain" />
-            </div>
-          </LazyLoad>
-          <div className="w-[66%] max-md:w-full max-md:ml-0 ml-5 h-[95%] ">
-            <div className="text-[orange] font-[Buba] text-2xl">
-              Full Stack Developer
-            </div>
-            <div>
-              <Fade direction="right" duration={1000} triggerOnce={true}>
-                <div className="flex flex-col my-2">
-                  <li className="text-[orange] text-[17px] font-[Buba]">
-                    My Background
-                  </li>
-                  <div className="text-[13px]">
-                    I embarked on my programming journey in 2019 Over time, I've
-                    mastered a range of technologies and frameworks, enabling me
-                    to excel in both frontend and backend development.
-                  </div>
+      <div className={`mt-[65px] w-full flex flex-col items-center h-auto ${!mode ? "bg-black text-white" : "text-black bg-white"}`}>
+        <div className="text-4xl max-md:text-2xl font-[Buba]">About Me</div>
+        <Fade triggerOnce={true} delay={1000}>
+
+          <div>
+            <div className="my-10" />
+            <div className="w-full flex justify-center items-center ">
+              <div className="w-[80%] h-full flex max-md:flex-col items-center">
+                <div className={`min-w-[200px] h-[150px] bg-white rounded-lg mr-5 border-[2px] ${!mode ? "border-none" : "border-[gray]"}`}>
+                  <img src={frontend} alt="FrontEnd" className="h-full w-full  rounded-lg  object-cover" />
                 </div>
-              </Fade>
-              <Fade direction="right" duration={1000} triggerOnce={true}>
-                <div className="flex flex-col my-2">
-                  <li className="text-[orange] text-[17px] font-[Buba]">
-                    Frontend Expertise
-                  </li>
-                  <div className="text-[13px]">
-                    I specialize in creating captivating and user-friendly
-                    interfaces. Utilizing HTML, CSS, JavaScript, and modern
-                    frameworks like React, Vite, Tailwind, and also state
-                    management. I bring designs to life with responsive layouts
-                    and interactive elements for optimum user experience
-                    performance.
-                  </div>
-                </div>
-              </Fade>
-              <Fade direction="right" duration={1000} triggerOnce={true}>
-                <div className="flex flex-col my-2">
-                  <li className="text-[orange] text-[17px] font-[Buba]">
-                    Backend Proficiency
-                  </li>
-                  <div className="text-[13px]">
-                    I specialize in developing robust backend architectures for
-                    dynamic web applications. Leveraging technologies like
-                    Node.js, Express. I ensure efficient and secure systems from
-                    database design to server-side scripting. My expertise
-                    includes RESTful APIs, authentication, and database
-                    management, ensuring seamless application functionality.
-                  </div>
-                </div>
-              </Fade>
-              <Fade direction="right" duration={1000} triggerOnce={true}>
-                <div className="flex flex-col my-2">
-                  <li className="text-[orange] text-[17px] font-[Buba]">
-                    UI/UX Design
-                  </li>
-                  <div className="text-[13px]">
-                    Beyond technical skills, I'm passionate about crafting
-                    intuitive user experiences. I believe effective UI/UX design
-                    drives user satisfaction. Through user research,
-                    prototyping, and testing, I deliver visually appealing and
-                    user-friendly interfaces that meet user needs.
-                  </div>
-                </div>
-              </Fade>
-              <Fade direction="right" duration={1000} triggerOnce={true}>
-                <div className="flex flex-col my-2">
-                  <li className="text-[orange] text-[17px] font-[Buba]">
-                    Collaborative Approach
-                  </li>
-                  <div className="text-[13px]">
-                    I excel in collaborative settings, working with designers,
-                    engineers, and stakeholders to achieve shared goals. I
-                    prioritize open communication and teamwork (GITHUB) to drive
-                    success in cross-functional teams.
-                  </div>
-                </div>
-              </Fade>
-              <Fade direction="right" duration={1000} triggerOnce={true}>
-                <div className="flex flex-col my-2">
-                  <li className="text-[orange] text-[17px] font-[Buba]">
-                    My Mission
-                  </li>
-                  <div className="text-[13px]">
-                    I aim to use technology to solve real-world problems and
-                    improve digital interactions. Whether building innovative
-                    products, optimizing systems, or pushing creative
-                    boundaries, I'm dedicated to delivering high-quality
-                    solutions that have a positive impact.
-                  </div>
-                </div>
-              </Fade>
-              <Fade direction="right" duration={1000} triggerOnce={true}>
-                <div className="flex flex-col my-2">
-                  <li className="text-[orange] text-[17px] font-[Buba]">
-                    Let's Connect
-                  </li>
-                  <div className="text-[13px]">
-                    I'm eager to connect with fellow developers, designers, and
-                    tech enthusiasts. Whether collaborating, discussing industry
-                    trends, or sharing ideas, feel free to reach out. Let's
-                    innovate together!
-                  </div>
-                </div>
-              </Fade>
+                <div className="max-md:text-center mt-3 text-[15px]">I excel in crafting captivating and intuitive interfaces, employing a blend of HTML, CSS, and JavaScript alongside cutting-edge frameworks such as React, Vite, and Tailwind. By integrating seamless state management, I breathe life into designs, ensuring responsive layouts and dynamic interactions that elevate user experience to its zenith.</div>
+              </div>
             </div>
           </div>
-        </div>
+        </Fade>
+        <Fade triggerOnce={true} delay={1000}>
+
+          <div>
+            <div className="my-10" />
+            <div className="w-full flex justify-center items-center ">
+              <div className="w-[80%] h-full flex-row-reverse flex max-md:flex-col items-center">
+                <div className={`min-w-[200px] h-[150px] bg-white rounded-lg mr-5 border-[2px] ${!mode ? "border-none" : "border-[gray]"}`}>
+                  <img src={frontend} alt="FrontEnd" className="h-full w-full  rounded-lg  object-cover" />
+                </div>
+                <div className="max-md:text-center mt-3 text-[15px]">I'm dedicated to crafting resilient backend architectures for dynamic web applications, harnessing the power of technologies like Node.js and Express. From meticulous database design to flawless server-side scripting, I guarantee efficient and secure systems. My proficiency extends to building RESTful APIs, implementing authentication mechanisms, and managing databases, all to ensure seamless application functionality and user satisfaction.</div>
+              </div>
+            </div>
+          </div>
+        </Fade>
+        <Fade triggerOnce={true} delay={1000}>
+
+          <div>
+            <div className="my-10" />
+            <div className="w-full flex justify-center items-center ">
+              <div className="w-[80%] h-full flex max-md:flex-col items-center">
+                <div className={`min-w-[200px] h-[150px] bg-white rounded-lg mr-5 border-[2px] ${!mode ? "border-none" : "border-[gray]"}`}>
+                  <img src={frontend} alt="FrontEnd" className="h-full w-full  rounded-lg  object-cover" />
+                </div>
+                <div className="max-md:text-center mt-3 text-[15px]">Beyond technical prowess, I'm driven by a passion for crafting intuitive user experiences that resonate with users on a profound level. I firmly believe that effective UI/UX design is the cornerstone of user satisfaction. By meticulously conducting user research, prototyping, and rigorous testing, I bring to life visually captivating and seamlessly navigable interfaces tailored to meet the diverse needs of users.</div>
+              </div>
+            </div>
+          </div>
+        </Fade>
+        <Fade triggerOnce={true} delay={1000}>
+
+          <div>
+            <div className="my-10" />
+            <div className="w-full flex justify-center items-center ">
+              <div className="w-[80%] h-full flex-row-reverse flex max-md:flex-col items-center">
+                <div className={`min-w-[200px] h-[150px] bg-white rounded-lg mr-5 border-[2px] ${!mode ? "border-none" : "border-[gray]"}`}>
+                  <img src={frontend} alt="FrontEnd" className="h-full w-full  rounded-lg  object-cover" />
+                </div>
+                <div className="max-md:text-center mt-3 text-[15px]">I thrive in collaborative environments, seamlessly integrating with designers, engineers, and stakeholders to realize shared objectives. With a commitment to open communication and teamwork, I leverage platforms like GitHub to foster cohesion and drive success within cross-functional teams.</div>
+              </div>
+            </div>
+          </div>
+        </Fade>
+        <Fade triggerOnce={true} delay={1000}>
+
+          <div>
+            <div className="my-10" />
+            <div className="w-full flex justify-center items-center ">
+              <div className="w-[80%] h-full flex max-md:flex-col items-center">
+                <div className={`min-w-[200px] h-[150px] bg-white rounded-lg mr-5 border-[2px] ${!mode ? "border-none" : "border-[gray]"}`}>
+                  <img src={frontend} alt="FrontEnd" className="h-full w-full  rounded-lg  object-cover" />
+                </div>
+                <div className="max-md:text-center mt-3 text-[15px]"> I aim to use technology to solve real-world problems and
+                  improve digital interactions. Whether building innovative
+                  products, optimizing systems, or pushing creative
+                  boundaries, I'm dedicated to delivering high-quality
+                  solutions that have a positive impact.</div>
+              </div>
+            </div>
+          </div>
+        </Fade>
+        <Fade triggerOnce={true} delay={1000}>
+          <div >
+            <div className="my-10" />
+            <div className="w-full flex justify-center items-center ">
+              <div className="w-[80%] h-full flex-row-reverse flex max-md:flex-col items-center">
+                <div className={`min-w-[200px] h-[150px] bg-white rounded-lg mr-5 border-[2px] ${!mode ? "border-none" : "border-[gray]"}`}>
+                  <img src={frontend} alt="FrontEnd" className="h-full w-full  rounded-lg  object-cover" />
+                </div>
+                <div className="max-md:text-center mt-3 text-[15px]">I'm excited to engage with fellow developers, designers, and tech aficionados. Whether it's collaborating on projects, delving into industry trends, or exchanging innovative ideas, don't hesitate to reach out. Let's embark on a journey of innovation together!</div>
+              </div>
+            </div>
+          </div>
+        </Fade>
       </div>
+
     </div>
   );
 };

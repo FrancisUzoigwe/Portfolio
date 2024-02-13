@@ -36,9 +36,8 @@ const DropDown = () => {
         <div className="w-[90%] flex ">
           <div className="absolute right-[14px] top-[20px]">
             <HiMenu
-              className={`text-3xl hover:cursor-pointer font-[Buba] hover:scale-[1.2] transition duration-300 ${
-                main ? "text-black" : "text-white"
-              }`}
+              className={`text-3xl hover:cursor-pointer font-[Buba] hover:scale-[1.2] transition duration-300 ${main ? "text-black" : "text-white"
+                }`}
               onClick={() => {
                 dispatch(changedToggle());
               }}
@@ -74,61 +73,67 @@ const DropDown = () => {
           >
             <div className="w-full ml-5 flex-col items-center flex">
               <Link to="home" smooth={true} duration={1000}>
-                <motion.div
+                <motion.div onClick={() => {
+                  dispatch(changedToggle())
+                }}
                   variants={item}
-                  className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${
-                    main ? "text-black" : "text-white"
-                  }`}
+                  className={`mx-5  max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${main ? "text-black" : "text-white"
+                    }`}
                 >
                   Home
                 </motion.div>
               </Link>
               <Link to="about" smooth={true} duration={1000}>
-                <motion.div
+                <motion.div onClick={() => {
+                  dispatch(changedToggle())
+                }}
                   variants={item}
-                  className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${
-                    main ? "text-black" : "text-white"
-                  }`}
+                  className={`mx-5  max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${main ? "text-black" : "text-white"
+                    }`}
                 >
                   About Me
                 </motion.div>
               </Link>
               <Link to="projects" smooth={true} duration={1000}>
-                <motion.div
+                <motion.div onClick={() => {
+                  dispatch(changedToggle())
+                }}
                   variants={item}
-                  className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${
-                    main ? "text-black" : "text-white"
-                  }`}
+                  className={`mx-5  max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${main ? "text-black" : "text-white"
+                    }`}
                 >
                   Projects
                 </motion.div>
               </Link>
               <Link to="resume" smooth={true} duration={1000}>
-                <motion.div
+                <motion.div onClick={() => {
+                  dispatch(changedToggle())
+                }}
                   variants={item}
-                  className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${
-                    main ? "text-black" : "text-white"
-                  }`}
+                  className={`mx-5  max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${main ? "text-black" : "text-white"
+                    }`}
                 >
                   Resume
                 </motion.div>
               </Link>
               <Link to="skills" smooth={true} duration={1000}>
-                <motion.div
+                <motion.div onClick={() => {
+                  dispatch(changedToggle())
+                }}
                   variants={item}
-                  className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${
-                    main ? "text-black" : "text-white"
-                  }`}
+                  className={`mx-5  max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${main ? "text-black" : "text-white"
+                    }`}
                 >
                   Skills
                 </motion.div>
               </Link>
               <Link to="contact" smooth={true} duration={1000}>
-                <motion.div
+                <motion.div onClick={() => {
+                  dispatch(changedToggle())
+                }}
                   variants={item}
-                  className={`mx-5 max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${
-                    main ? "text-black" : "text-white"
-                  }`}
+                  className={`mx-5  max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${main ? "text-black" : "text-white"
+                    }`}
                 >
                   Contact
                 </motion.div>

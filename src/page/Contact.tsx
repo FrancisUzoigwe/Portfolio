@@ -98,7 +98,7 @@ const Contact = () => {
             <div className="flex mt-2">
               <a href="https://facebook.com/FrancisUzoigwe.28/">
                 <div
-                  className={`w-[42px] h-[40px] rounded-xl ${
+                  className={`w-[37px] h-[37px] rounded-xl ${
                     !mode
                       ? "bg-white hover:bg-[#777676] transition duration-300"
                       : "bg-black hover:bg-[#242424]"
@@ -106,13 +106,13 @@ const Contact = () => {
                 >
                   <FaFacebookF
                     className={`${!mode ? "text-[blue] " : "text-white"}`}
-                    size={27}
+                    size={25}
                   />
                 </div>
               </a>
               <a href="https://www.youtube.com/channel/UC6rvLb8SLFHsKb3EkeI2yTg">
                 <div
-                  className={`w-[42px] h-[40px] rounded-xl ${
+                  className={`w-[37px] h-[37px] rounded-xl ${
                     !mode
                       ? "bg-white hover:bg-[#777676]"
                       : "bg-black hover:bg-[#242424]"
@@ -120,13 +120,13 @@ const Contact = () => {
                 >
                   <FaYoutube
                     className={`${!mode ? "text-[red]" : "text-white"}`}
-                    size={27}
+                    size={25}
                   />
                 </div>
               </a>
               {/* <a href="https://www.tiktok.com/@francisuzoigwe28">
                 <div
-                  className={`w-[42px] h-[40px] rounded-xl ${
+                  className={`w-[37px] h-[37px] rounded-xl ${
                     !mode
                       ? "bg-white hover:bg-[#777676]"
                       : "bg-black hover:bg-[#242424]"
@@ -134,13 +134,13 @@ const Contact = () => {
                 >
                   <FaTiktok
                     className={`${!mode ? "text-[black]" : "text-white"}`}
-                    size={27}
+                    size={25}
                   />
                 </div>
               </a> */}
               <a href="https://www.linkedin.com/in/francis-uzoigwe-2b3b9b246">
                 <div
-                  className={`w-[42px] h-[40px] rounded-xl ${
+                  className={`w-[37px] h-[37px] rounded-xl ${
                     !mode
                       ? "bg-white hover:bg-[#777676]"
                       : "bg-black hover:bg-[#242424]"
@@ -148,13 +148,13 @@ const Contact = () => {
                 >
                   <FaLinkedinIn
                     className={`${!mode ? "text-[blue]" : "text-white"}`}
-                    size={27}
+                    size={25}
                   />
                 </div>
               </a>
               <a href="https://twitter.com/francisuzoigwe1">
                 <div
-                  className={`w-[42px] h-[40px] rounded-xl ${
+                  className={`w-[37px] h-[37px] rounded-xl ${
                     !mode
                       ? "bg-white hover:bg-[#777676]"
                       : "bg-black hover:bg-[#242424]"
@@ -162,13 +162,13 @@ const Contact = () => {
                 >
                   <FaXTwitter
                     className={`${!mode ? "text-[black]" : "text-white"}`}
-                    size={27}
+                    size={25}
                   />
                 </div>
               </a>
               <a href="https://www.instagram.com/FrancisUzoigwe.28">
                 <div
-                  className={`w-[42px] h-[40px] rounded-xl ${
+                  className={`w-[37px] h-[37px] rounded-xl ${
                     !mode
                       ? "bg-white hover:bg-[#777676]"
                       : "bg-black hover:bg-[#242424]"
@@ -176,13 +176,13 @@ const Contact = () => {
                 >
                   <FaInstagram
                     className={`${!mode ? "text-[#b33c3c]" : "text-white"}`}
-                    size={27}
+                    size={25}
                   />
                 </div>
               </a>
               <a href="https://github.com/FrancisUzoigwe">
                 <div
-                  className={`w-[42px] h-[40px] rounded-xl ${
+                  className={`w-[37px] h-[37px] rounded-xl ${
                     !mode
                       ? "bg-white hover:bg-[#777676]"
                       : "bg-black hover:bg-[#242424] "
@@ -190,13 +190,13 @@ const Contact = () => {
                 >
                   <FaGithub
                     className={`${!mode ? "text-[black] " : "text-white"}`}
-                    size={27}
+                    size={25}
                   />
                 </div>
               </a>
               <a href="https://wa.link/r3i1hv">
                 <div
-                  className={`w-[42px] h-[40px] rounded-xl ${
+                  className={`w-[37px] h-[37px] rounded-xl ${
                     !mode
                       ? "bg-white hover:bg-[#777676]"
                       : "bg-black hover:bg-[#242424] "
@@ -204,7 +204,7 @@ const Contact = () => {
                 >
                   <FaWhatsapp
                     className={`${!mode ? "text-[green] " : "text-white"}`}
-                    size={27}
+                    size={25}
                   />
                 </div>
               </a>

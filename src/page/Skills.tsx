@@ -19,6 +19,7 @@ import html from "../assets/html.svg"
 import css from "../assets/css.svg"
 import vite from "../assets/vite.svg"
 import jira from "../assets/jira.svg"
+import github from "../assets/gitmain.svg"
 const Skills = () => {
   const mode = useSelector((state: any) => state.mode);
   return (
@@ -39,11 +40,12 @@ const Skills = () => {
             <Skill text="React" src={react} />
             <Skill text="HTML" src={html} />
             <Skill text="CSS" src={css} />
-            <Skill text="Tailwindcss" src={tailwindcss} />
+            <Skill text="Tailwindcss" src={tailwindcss} style="max-md:text-[13px]"/>
             <Skill text="MongoDB" src={mongoDB} />
             <Skill text="SQL" src={postgres} />
             <Skill text="Figma" src={figma} />
             <Skill text="Firebase" src={firebase} />
+            <Skill text="Github" src={github} style="bg-white"/>
             <Skill text="Typescript" src={typescript} />
             <Skill text="Javascript" src={javascript} />
             <Skill text="Redux Toolkit" src={redux} />

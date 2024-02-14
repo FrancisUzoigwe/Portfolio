@@ -18,6 +18,7 @@ import py from "../assets/python.svg"
 import html from "../assets/html.svg"
 import css from "../assets/css.svg"
 import vite from "../assets/vite.svg"
+import jira from "../assets/jira.svg"
 const Skills = () => {
   const mode = useSelector((state: any) => state.mode);
   return (
@@ -53,6 +54,7 @@ const Skills = () => {
             <Skill text="Python" src={py} />
             <Skill text="Vite" src={vite} style="bg-white" />
             <Skill text="Vercel" src={vercel} style="bg-white" />
+            <Skill text="Jira" src={jira} />
           </div>
         </div>
       </div>

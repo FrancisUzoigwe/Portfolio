@@ -5,6 +5,19 @@ import typescript from "../assets/typescript.svg"
 import firebase from "../assets/firebase.svg"
 import javascript from "../assets/javascript.svg"
 import tailwindcss from "../assets/tailwind-css.svg"
+import three from "../assets/threejs.svg"
+import figma from "../assets/figma.svg"
+import redux from "../assets/redux-original.svg"
+import mongoDB from "../assets/mongoDB.svg"
+import postgres from "../assets/postgresql.svg"
+import git from "../assets/git.svg"
+import express from "../assets/node-js.svg"
+import node from "../assets/node.svg"
+import vercel from "../assets/vercel.svg"
+import py from "../assets/python.svg"
+import html from "../assets/html.svg"
+import css from "../assets/css.svg"
+import vite from "../assets/vite.svg"
 const Skills = () => {
   const mode = useSelector((state: any) => state.mode);
   return (
@@ -21,12 +34,25 @@ const Skills = () => {
           Skills
         </div>
         <div className="w-full flex justify-center ">
-          <div className="grid grid-cols-8 w-[90%]  max-lg:grid-cols-6 max-md:grid-cols-4 mt-7 max-sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-8 w-[90%]  max-lg:grid-cols-6 max-md:grid-cols-4 mt-7 max-sm:grid-cols-3 gap-4 place-items-center">
             <Skill text="React" src={react} />
-            <Skill text="Typescript" src={typescript} />
-            <Skill text="Firebase" src={firebase} />
-            <Skill text="Javascript" src={javascript} />
+            <Skill text="HTML" src={html} />
+            <Skill text="CSS" src={css} />
             <Skill text="Tailwindcss" src={tailwindcss} />
+            <Skill text="MongoDB" src={mongoDB} />
+            <Skill text="SQL" src={postgres} />
+            <Skill text="Figma" src={figma} />
+            <Skill text="Firebase" src={firebase} />
+            <Skill text="Typescript" src={typescript} />
+            <Skill text="Javascript" src={javascript} />
+            <Skill text="Redux Toolkit" src={redux} />
+            <Skill text="ThreeJS" src={three} style="bg-white" />
+            <Skill text="Git" src={git} />
+            <Skill text="Node" src={node} />
+            <Skill text="ExpressJS" src={express} />
+            <Skill text="Python" src={py} />
+            <Skill text="Vite" src={vite} style="bg-white" />
+            <Skill text="Vercel" src={vercel} style="bg-white" />
           </div>
         </div>
       </div>

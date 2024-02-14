@@ -1,17 +1,22 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 
 interface iSkill {
     text?: string;
     src?: any;
+    style?: string;
 }
 
 
-const Skill: React.FC<iSkill> = ({ src, text }) => {
+const Skill: React.FC<iSkill> = ({ src, text, style }) => {
+    const mode = useSelector((state: any) => state.mode)
     return (
-        <div className="h-[100px] w-auto border border-white rounded-xl flex items-center justify-center relative">
-            <img src={src} alt="Image" className="w-full h-full object-contain" />
-            <div className="w-full h-full absolute bg-[gray] opacity-0 hover:opacity-90 hover:cursor-pointer transition duration-300 rounded-xl flex items-center justify-center">{text}</div>
+        <div className={`h-[100px] max-md:h-[80px] max-md:gap-2 max-md:w-[80px] w-[100px] border-[2px]  rounded-full relative flex items-center justify-center ${style} ${mode ? "border-black" : "border"}`}>
+            <img src={src} alt="Redux" className={`w-[60%] h-[60%] ab`} />
+            <div className="w-full h-full rounded-full bg-[gray] absolute opacity-0 hover:opacity-80 hover:cursor-pointer text-center transition duration-300 flex items-center justify-center">
+                <div className="">{text}</div>
+            </div>
         </div>
     )
 }

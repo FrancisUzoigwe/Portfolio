@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component"
 import 'react-vertical-timeline-component/style.min.css';
+import vite from "../assets/react.svg"
 const TimeLine = () => {
 
   const mode = useSelector((state: any) => state.mode)
@@ -11,29 +12,31 @@ const TimeLine = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid rgb(33, 150, 243)' }}
-          date="2011 - present"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          icon={""}
+          date="2024 - present"
+          iconStyle={{ backgroundColor: 'rgb(33, 150, 243)', color: '#fff', background: `url(${vite})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}
+          icon={``}
         >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-          <p>
+          <h3 className="vertical-timeline-element-title">Frontend Lead </h3>
+          <h4 className="vertical-timeline-element-subtitle">Dirt2School</h4>
+          <p />
+          <li>
             Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-          </p>
+          </li>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid rgb(33, 150, 243)' }}
-          date="2011 - present"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          icon={""}
+          date="2023 - 2024"
+          iconStyle={{ backgroundColor: 'rgb(33, 150, 243)', color: '#fff', background: `url(${vite})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}
+          icon={``}
         >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-          </p>
+          <h3 className="vertical-timeline-element-title">Chief Technical Offiver (C.T.O) </h3>
+          <h4 className="vertical-timeline-element-subtitle">Dirt2School</h4>
+          <p />
+          <li>
+            Ensured responsiveness and functionalities worked perfectly fine and also enhanced user expreince.
+          </li>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>

@@ -16,6 +16,21 @@ const TimeLine = () => {
           iconStyle={{ backgroundColor: 'rgb(33, 150, 243)', color: '#fff', background: `url(${vite})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}
           icon={``}
         >
+          <h3 className="vertical-timeline-element-title">Full Stack Developer </h3>
+          <h4 className="vertical-timeline-element-subtitle">FlexiCart</h4>
+          <p />
+          <li>
+            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+          </li>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid rgb(33, 150, 243)' }}
+          date="2023 - 2024"
+          iconStyle={{ backgroundColor: 'rgb(33, 150, 243)', color: '#fff', background: `url(${vite})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}
+          icon={``}
+        >
           <h3 className="vertical-timeline-element-title">Frontend Lead </h3>
           <h4 className="vertical-timeline-element-subtitle">Dirt2School</h4>
           <p />

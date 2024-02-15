@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import frontend from "./../assets/front.jpg"
 import { Fade } from "react-awesome-reveal";
+import uiux from "../assets/uiux.jpg"
 const About = () => {
   const mode = useSelector((state: any) => state.mode);
   return (
@@ -11,8 +12,7 @@ const About = () => {
     >
       <div className={`mt-[65px] w-full flex flex-col items-center h-auto ${!mode ? "bg-black text-white" : "text-black bg-white"}`}>
         <div className="text-4xl max-md:text-2xl font-[Buba]">About Me</div>
-        <Fade triggerOnce={true} delay={1000}>
-
+        <Fade triggerOnce={true} delay={500}>
           <div>
             <div className="my-10" />
             <div className="w-full flex justify-center items-center ">
@@ -25,7 +25,7 @@ const About = () => {
             </div>
           </div>
         </Fade>
-        <Fade triggerOnce={true} delay={1000}>
+        <Fade triggerOnce={true} delay={500}>
 
           <div>
             <div className="my-10" />
@@ -40,21 +40,21 @@ const About = () => {
             </div>
           </div>
         </Fade>
-        <Fade triggerOnce={true} delay={1000}>
+        <Fade triggerOnce={true} delay={500}>
 
           <div>
             <div className="my-10" />
             <div className="w-full flex justify-center items-center ">
               <div className="w-[80%] h-full flex max-md:flex-col items-center">
                 <div className={`min-w-[200px] h-[150px] bg-white rounded-lg mr-5 border-[2px] ${!mode ? "border-none" : "border-[gray]"}`}>
-                  <img src={frontend} alt="FrontEnd" className="h-full w-full  rounded-lg  object-cover" />
+                  <img src={uiux} alt="FrontEnd" className="h-full w-full  rounded-lg  object-cover" />
                 </div>
                 <div className="max-md:text-center mt-3 text-[15px]">Passionate about intuitive user experiences and effective UI/UX design. Skilled in user research, prototyping, and rigorous testing to create captivating interfaces tailored to diverse user needs.</div>
               </div>
             </div>
           </div>
         </Fade>
-        <Fade triggerOnce={true} delay={1000}>
+        <Fade triggerOnce={true} delay={500}>
 
           <div>
             <div className="my-10" />
@@ -68,7 +68,7 @@ const About = () => {
             </div>
           </div>
         </Fade>
-        <Fade triggerOnce={true} delay={1000}>
+        <Fade triggerOnce={true} delay={500}>
 
           <div>
             <div className="my-10" />
@@ -83,7 +83,7 @@ const About = () => {
             </div>
           </div>
         </Fade>
-        <Fade triggerOnce={true} delay={1000}>
+        <Fade triggerOnce={true} delay={500}>
           <div >
             <div className="my-10" />
             <div className="w-full flex justify-center items-center ">

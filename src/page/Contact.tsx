@@ -23,8 +23,8 @@ const Contact = () => {
         <div className="w-[90%] h-auto ">
           <div className=" ml-2 font-[Buba] text-[20px]">Send me an email</div>
           <Message />
-          <div className="text-white w-full  mt-7 flex-col items-end flex">
-            <div>Reach me on</div>
+          <div className="text-white w-full   flex-col items-end flex">
+            <div className="my-3">Reach me on</div>
             <div className="flex ">
               <a href="https://facebook.com/FrancisUzoigwe.28/">
                 <div

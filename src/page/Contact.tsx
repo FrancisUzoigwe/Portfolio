@@ -21,7 +21,7 @@ const Contact = () => {
       <div className="w-full h-auto flex flex-col items-center mt-[65px]">
         <div className="text-4xl max-md:text-2xl font-[Buba]">Contact Me</div>
         <div className="w-[90%] h-auto ">
-          <div className=" ml-2 font-[Buba] text-[20px]">Send me an email</div>
+          <div className=" ml-2 font-[Buba] text-[17px]">Let's start your project</div>
           <Message />
           <div className="text-white w-full   flex-col items-end flex">
             <div className="my-3">Reach me on</div>

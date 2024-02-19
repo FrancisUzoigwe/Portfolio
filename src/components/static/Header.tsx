@@ -40,32 +40,37 @@ const Header = () => {
 
               <div className="flex items-center max-md:hidden">
                 <Link to="home" smooth={true} duration={1000}>
-                  <div className="mx-5 hover:cursor-pointer font-[Buba]">
+                  <div className="mx-5 hover:cursor-pointer font-[Buba]" onClick={() => { navigate("/") }}>
                     Home
                   </div>
                 </Link>
                 <Link to="about" smooth={true} duration={1000}>
-                  <div className="mx-5 hover:cursor-pointer font-[Buba]">
+                  <div className="mx-5 hover:cursor-pointer font-[Buba]" onClick={() => { navigate("/") }}>
                     About Me
                   </div>
                 </Link>
                 <Link to="projects" smooth={true} duration={1000}>
-                  <div className="mx-5 hover:cursor-pointer font-[Buba]">
+                  <div className="mx-5 hover:cursor-pointer font-[Buba]" onClick={() => { navigate("/") }}>
                     Projects
                   </div>
                 </Link>
+                <div className="mx-5 hover:cursor-pointer font-[Buba]" onClick={() => {
+                  navigate("/blogs")
+                }}>
+                  Blogs
+                </div>
                 <Link to="resume" smooth={true} duration={1000}>
-                  <div className="mx-5 hover:cursor-pointer font-[Buba]">
+                  <div className="mx-5 hover:cursor-pointer font-[Buba]" onClick={() => { navigate("/") }}>
                     Resume
                   </div>
                 </Link>
                 <Link to="skills" smooth={true} duration={1000}>
-                  <div className="mx-5 hover:cursor-pointer font-[Buba]">
+                  <div className="mx-5 hover:cursor-pointer font-[Buba]" onClick={() => { navigate("/") }}>
                     Skills
                   </div>
                 </Link>
                 <Link to="contact" smooth={true} duration={1000}>
-                  <div className="mx-5 hover:cursor-pointer font-[Buba]">
+                  <div className="mx-5 hover:cursor-pointer font-[Buba]" onClick={() => { navigate("/") }}>
                     Contact
                   </div>
                 </Link>

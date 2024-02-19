@@ -7,12 +7,13 @@ import DropDown from "./DropDown";
 import { Link } from "react-scroll";
 import { BsToggle2Off, BsToggle2On } from "react-icons/bs";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const dispatch = useDispatch();
   const toggle = useSelector((state: any) => state.toggle);
   const main = useSelector((state: any) => state.mode);
-
+  const navigate = useNavigate()
   const [mode, setMode] = useState<boolean>(false);
   const onMode = () => {
     setMode(!mode);
@@ -23,20 +24,20 @@ const Header = () => {
       <div className="w-full h-[70px] relative flex items-center justify-center z-[500]">
         <div className="w-full h-[70px]  flex items-center justify-center fixed">
           <div
-            className={`w-full  ${
-              !main ? "bg-black text-white" : "bg-white text-black"
-            }  h-[70px] flex items-center justify-center`}
+            className={`w-full  ${!main ? "bg-black text-white" : "bg-white text-black"
+              }  h-[70px] flex items-center justify-center`}
           >
             <div className="w-[95%] flex items-center justify-between">
-              <Link to="home" smooth={true} duration={1000}>
-                <div className="h-[35px] max-md:h-[25px] ml-2  ">
-                  <img
-                    src={!main ? francis1 : francis}
-                    alt="FrancisUzoigwe"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </Link>
+              <div className="h-[35px] max-md:h-[25px] ml-2  " onClick={() => {
+                navigate("/")
+              }}>
+                <img
+                  src={!main ? francis1 : francis}
+                  alt="FrancisUzoigwe"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
               <div className="flex items-center max-md:hidden">
                 <Link to="home" smooth={true} duration={1000}>
                   <div className="mx-5 hover:cursor-pointer font-[Buba]">

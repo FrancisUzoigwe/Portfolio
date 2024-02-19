@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { BsToggle2On, BsToggle2Off } from "react-icons/bs";
 
 import { useState } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const DropDown = () => {
   const dispatch = useDispatch();
@@ -29,6 +30,7 @@ const DropDown = () => {
     setMode(!mode);
   };
 
+  const navigate = useNavigate()
   const main = useSelector((state: any) => state.mode);
   return (
     <>
@@ -77,7 +79,7 @@ const DropDown = () => {
                   dispatch(changedToggle())
                 }}
                   variants={item}
-                  className={`mx-5  max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${main ? "text-black" : "text-white"
+                  className={`mx-5  max-md:my-5 my-7 hover:cursor-pointer font-[Buba] ${main ? "text-black" : "text-white"
                     }`}
                 >
                   Home
@@ -88,18 +90,29 @@ const DropDown = () => {
                   dispatch(changedToggle())
                 }}
                   variants={item}
-                  className={`mx-5  max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${main ? "text-black" : "text-white"
+                  className={`mx-5  max-md:my-5 my-7 hover:cursor-pointer font-[Buba] ${main ? "text-black" : "text-white"
                     }`}
                 >
                   About Me
                 </motion.div>
               </Link>
+              <motion.div onClick={() => {
+                navigate("/blogs")
+                dispatch(changedToggle())
+              }}
+                variants={item}
+                className={`mx-5  max-md:my-5 my-7 hover:cursor-pointer font-[Buba] ${main ? "text-black" : "text-white"
+                  }`}
+              >
+                Blogs
+              </motion.div>
+
               <Link to="projects" smooth={true} duration={1000}>
                 <motion.div onClick={() => {
                   dispatch(changedToggle())
                 }}
                   variants={item}
-                  className={`mx-5  max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${main ? "text-black" : "text-white"
+                  className={`mx-5  max-md:my-5 my-7 hover:cursor-pointer font-[Buba] ${main ? "text-black" : "text-white"
                     }`}
                 >
                   Projects
@@ -110,7 +123,7 @@ const DropDown = () => {
                   dispatch(changedToggle())
                 }}
                   variants={item}
-                  className={`mx-5  max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${main ? "text-black" : "text-white"
+                  className={`mx-5  max-md:my-5 my-7 hover:cursor-pointer font-[Buba] ${main ? "text-black" : "text-white"
                     }`}
                 >
                   Resume
@@ -121,7 +134,7 @@ const DropDown = () => {
                   dispatch(changedToggle())
                 }}
                   variants={item}
-                  className={`mx-5  max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${main ? "text-black" : "text-white"
+                  className={`mx-5  max-md:my-5 my-7 hover:cursor-pointer font-[Buba] ${main ? "text-black" : "text-white"
                     }`}
                 >
                   Skills
@@ -132,7 +145,7 @@ const DropDown = () => {
                   dispatch(changedToggle())
                 }}
                   variants={item}
-                  className={`mx-5  max-md:my-8 my-9 hover:cursor-pointer font-[Buba] ${main ? "text-black" : "text-white"
+                  className={`mx-5  max-md:my-5 my-7 hover:cursor-pointer font-[Buba] ${main ? "text-black" : "text-white"
                     }`}
                 >
                   Contact

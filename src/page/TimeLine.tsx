@@ -14,7 +14,7 @@ const TimeLine = () => {
           contentArrowStyle={{ borderRight: '7px solid rgb(33, 150, 243)' }}
           date="2024 - present"
           iconStyle={{ backgroundColor: 'rgb(33, 150, 243)', color: '#fff', background: `url(${vite})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}
-          icon={``}
+          icon={""}
         >
           <h3 className="vertical-timeline-element-title">Full Stack Developer </h3>
           <h4 className="vertical-timeline-element-subtitle">FlexiCart</h4>

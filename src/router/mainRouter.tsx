@@ -6,6 +6,8 @@ import Projects from "../page/Projects";
 import Resume from "../page/Resume";
 import Skills from "../page/Skills";
 import Contact from "../page/Contact";
+import Blogs from "../page/Blogs";
+import BlogLayout from "../components/layout/BlogLayout";
 
 export const mainRouter = createBrowserRouter([
   {
@@ -39,5 +41,14 @@ export const mainRouter = createBrowserRouter([
     ],
   },
 
-
+  {
+    path: "/blogs",
+    element: <BlogLayout />,
+    children: [
+      {
+        index: true,
+        element: <Blogs />
+      }
+    ]
+  }
 ]);

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { BsToggle2On, BsToggle2Off } from "react-icons/bs";
 
 import { useState } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const DropDown = () => {
   const dispatch = useDispatch();

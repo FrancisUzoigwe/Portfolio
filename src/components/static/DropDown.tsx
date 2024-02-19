@@ -76,6 +76,7 @@ const DropDown = () => {
             <div className="w-full ml-5 flex-col items-center flex">
               <Link to="home" smooth={true} duration={1000}>
                 <motion.div onClick={() => {
+                  navigate("/")
                   dispatch(changedToggle())
                 }}
                   variants={item}

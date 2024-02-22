@@ -15,6 +15,7 @@ const BlogLayout = () => {
                 <Outlet />
                 <Contact />
             </motion.div>
+            
         </div>
     )
 }
